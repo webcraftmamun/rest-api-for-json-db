@@ -37,3 +37,12 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`.bgGreen.black);
 })
 ```
+
+## Packages
+
+- Express Js
+- Node JS
+- Dotenv
+- Nodemon
+- Colors
+- Nodemailer
