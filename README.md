@@ -49,4 +49,4 @@ app.listen(PORT, () => {
 
 ## Button
 
-[Click me](http://www.google.com){: .btn}
+[Click me](http://www.google.com)
