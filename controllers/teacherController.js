@@ -10,7 +10,7 @@ import { readFileSync, writeFileSync } from "fs";
 export const getTeachers = (req, res) => {
     
     // get user data form json db
-    const teachers = JSON.parse(readFileSync('db/teacher.json').toString());
+    const teachers = JSON.parse(readFileSync('db/teachers.json').toString());
 
     //send data
     res.status(200).json(teachers)
@@ -26,7 +26,7 @@ export const getTeachers = (req, res) => {
 export const createTeacher = (req, res) => {
     
     // get user data form json db
-    const teachers = JSON.parse(readFileSync('db/teacher.json').toString());
+    const teachers = JSON.parse(readFileSync('db/teachers.json').toString());
 
     // get data form req body
     const {name, age, cell} = req.body;
