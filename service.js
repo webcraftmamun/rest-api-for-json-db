@@ -2,6 +2,7 @@ import express from "express";
 import colors from "colors";
 import dotenv from "dotenv";
 import userRouter from "./routes/user.js";
+import teacherRouter from "./routes/teacher.js";
 
 // environment variable
 dotenv.config();
@@ -17,7 +18,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}))
 
 // api router
-app.use('/api/v1/user', userRouter )
+app.use('/api/v1/user', userRouter);
+app.use('/api/v1/teacher', teacherRouter);
 
 
 // listen port
